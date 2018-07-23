@@ -1,8 +1,6 @@
 // vue.config.js
 module.exports = {
-  configureWebpack: config => {
-    output: {
-      assetsPublicPath: ''
-    }
-  }
+  baseUrl: '/',
+  outputDir: 'dist',
+  assetsDir: 'assets'
 }
