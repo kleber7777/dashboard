@@ -1,6 +1,3 @@
-// vue.config.js
 module.exports = {
-  baseUrl: '/',
-  outputDir: 'dist',
-  assetsDir: 'assets'
+  baseUrl: process.env.MODE_ENV === 'production' ? '' : '/'
 }
