@@ -1,3 +1,7 @@
 module.exports = {
-  baseUrl: '/dashboard'
+  configureWebpack: config => {
+    if (process.env.NODE_ENV === 'production') {
+      baseUrl: '/dashboard'
+    }
+  }
 }
